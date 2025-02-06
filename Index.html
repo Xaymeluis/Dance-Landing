@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio de Baile - Tu Ritmo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary: #ff4d6d;
+            --secondary: #4361ee;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+        }
+
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff2b4f;
+        }
+
+        .services {
+            padding: 5rem 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .cta {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .contact {
+            padding: 5rem 2rem;
+            background: var(--light);
+        }
+
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Tu Ritmo</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 2rem;">Expresa tu pasión por el baile</p>
+            <a href="#contact" class="btn">¡Comienza Ahora!</a>
+        </div>
+    </header>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-heart"></i>
+                <h3>Coreografías para Bodas</h3>
+                <p>Crea un momento mágico para tu primer baile como pareja. Diseñamos coreografías personalizadas que harán inolvidable tu día especial.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-building"></i>
+                <h3>Eventos Institucionales</h3>
+                <p>Organizamos presentaciones y shows para eventos corporativos, celebraciones y ceremonias institucionales.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Baile y Ejercicio</h3>
+                <p>Mantente en forma mientras aprendes a bailar. Clases dinámicas que combinan ritmo y ejercicio para todos los niveles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2 style="margin-bottom: 1rem;">¿Listo para bailar?</h2>
+        <p style="margin-bottom: 2rem;">Únete a nuestra comunidad de baile y descubre una nueva forma de expresarte</p>
+        <a href="#contact" class="btn">Contacta con Nosotros</a>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contáctanos</h2>
+        <div class="contact-info">
+            <i class="fas fa-phone"></i>
+            <h3>Llámanos o escríbenos</h3>
+            <p style="font-size: 1.5rem; margin-bottom: 1rem;">989255539</p>
+            <p>¡Estamos listos para ayudarte a alcanzar tus metas en el baile!</p>
+        </div>
+    </section>
+</body>
+</html>
